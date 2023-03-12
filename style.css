@@ -1,0 +1,35 @@
+body{
+    background-image: url("img/fondoInicio.png");
+    background-color: #00AD9C;
+    background-size: cover;
+  background-size: 80rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.contenedor{
+   
+    position: absolute;
+  top: calc(33.33% - 10px); /* 50px es la mitad de la altura del div */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 500px;
+height: 300px;
+}
+
+.botones{
+    position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.btn{
+    background-color: transparent;
+    border:none;
+    display: block; 
+    margin: 10px auto;
+}
