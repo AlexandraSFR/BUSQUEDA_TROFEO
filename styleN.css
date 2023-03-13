@@ -1,0 +1,55 @@
+body{
+    background-image: url("img/nombresFondo.png");
+    background-color: #F2BC2A;
+    background-size: cover;
+  background-size: 75rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.contenedor{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+.input-box {
+    width: 200px;
+    height: 70px;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .left {
+    margin-right: 100px; /* añade un margen derecho de 20px al primer input */
+  }
+  
+  .right {
+    margin-left: 100px; /* añade un margen izquierdo de 20px al tercer input */
+    margin-right: auto; /* establece el margen derecho como "auto" para centrar el tercer input */
+  }
+
+  .with-bg {
+    background-color: transparent;
+    border:none;
+    background-image: url('img/comenzar.png'); /* añade la imagen de fondo al segundo input */
+    background-size: 100% 100%; /* ajusta el tamaño de la imagen para cubrir todo el input */
+    background-position: center center; /* centra la imagen en el input */
+    box-shadow: none; /* quita la sombra del redondeo */
+  }
+
+  input[type="submit"] {
+    value: "";
+    text-indent: -9999px; /* mueve el texto fuera de la pantalla */
+    font-size: 0; /* hace que el texto sea invisible */
+  }
