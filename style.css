@@ -1,5 +1,5 @@
 body{
-    background-image: url("img/fondoInicio.png");
+    background-image: url("img/fondoI.png");
     background-color: #00AD9C;
     background-size: cover;
   background-size: 80rem;
@@ -80,7 +80,7 @@ height: 300px;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('img/instruc.png');
+  background-image: url('img/manual.png');
   background-size: cover;
   background-position: center;
 

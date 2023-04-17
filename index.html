@@ -9,6 +9,7 @@
     
 </head>
 <body>
+  <audio id="myAudio" src="audio/audio1.mp3" autoplay loop></audio>
     <div class="contenedor">
         <div class="botones">
         <a href="nombres.html"><button class="btn"><img src="img/botonJUGAR.png" width="350px" height="120px"></button></a>
@@ -27,5 +28,10 @@
         </div>
       </div>
       <script src="modal.js"></script>
+      <script>
+        window.addEventListener("unload", function() {
+            document.getElementById("myAudio").pause();
+        });
+    </script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,55 @@
     <link rel="stylesheet" href="styleP.css">
     <title>Juego</title>
 </head>
+
 <body>
+    <audio id="myAudio" src="audio/audio2.mp3" autoplay loop></audio>
     <div id="container">
-        <div id="inner-container"> 
-            <img src="img/lab.png" alt="Imagen">
+        <div id="inner-container">
+            
+            <img src="img/lab.png" alt="Imagen" id="map" style="position: relative;">
+            <!-- <img src="img/lab.png" alt="Imagen">
+            <button class="btn2" id="btnStart" onclick="iniciarJuego()"></button>
+            -->
+            <!-- <img src="img/punteada.png" alt="Imagen">-->
         </div>
     </div>
-    <a href="index.html"><button class="btn"></button></a>
+    <div class="ad" id="distance"></div>
+    
+    <a href="despedida.html"><button class="btn"></button></a>
+    <button class="btn2"></button>
     <form action="">
-    <div class="pregunta">
-        <h1>¿HOLA SOY UNA PREGUNTA HOLA SOY UNA PREGUNTA HOLA SOY UNA PREGUNTA?</h1>
-    </div>
-    <div class="botones">
-        <button>Respuesta 1</button>
-        <button>Respuesta 2</button>
-        <button>Respuesta 3</button>
-        <button>Respuesta 4</button>
-    </div>
-</form>
+        <img class="imgEquipo" src="img/LA1.png" >
+        <div class="pregunta">
+            <h1 id="pregunta-texto"></h1>
+        </div>
+        <div class="botones">
+            <button id="btn1"></button>
+            <button id="btn2"></button>
+            <button id="btn3"></button>
+            <button id="btn4"></button>
+        </div>
+
+        <div class="botones" id="botones"></div>
+      <p class="mensaje" id="mensaje"></p>
+    </form>
+    <script>
+        window.addEventListener("unload", function () {
+            document.getElementById("myAudio").pause();
+        });
+
+        //NOMBRES DE LOS EQUIPOS 
+        var nombreEquipo = sessionStorage.getItem('nombreEquipo');
+        var nombreEquipo2 = sessionStorage.getItem('nombreEquipo2');
+        document.getElementById('nombreEquipo').textContent = nombreEquipo;
+        document.getElementById('nombreEquipo2').textContent = nombreEquipo2;
+
+        // FUNCION DE BUSQUEDA 
+
+        
+       
+    </script>
+    <script src="game.js" charset="UTF-8"></script>
 </body>
+
 </html>

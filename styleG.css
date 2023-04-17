@@ -1,0 +1,9 @@
+body{
+    background-image: url("img/ganador1.png");
+    background-color: #00AD9C;
+    background-size: cover;
+  background-size: 80rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}

@@ -8,12 +8,26 @@
     <title>Nombres</title>
 </head>
 <body>
+    <audio id="myAudio" src="audio/audio3.mp3" autoplay loop></audio>
     <div class="contenedor">
         <form action="juego.html">
-            <input type="text" name="input1" style="width: 200px; height: 60px; " class="input-box left">
-            <input  type="submit" name="input3" style="width: 300px; height: 80px;" class="input-box with-bg">
-            <input type="text" name="input3" style="width: 200px; height: 60px;" class="input-box right">
+            <input type="text" name="input1" id="equipo1" style="width: 200px; height: 60px; " class="input-box left">
+            <input  onclick= "guardarNombre()" type="submit" name="salida" style="width: 300px; height: 80px;" class="input-box with-bg">
+            <input type="text" name="input2" id="equipo2" style="width: 200px; height: 60px;" class="input-box right">
         </form>
     </div>
 </body>
+<script>
+    window.addEventListener("unload", function() {
+        document.getElementById("myAudio").pause();
+    });
+
+    function guardarNombre() {
+			var nombreEquipo = document.getElementById('equipo1').value; // OBTENEMOS EL VALOR DEL INPUT 'EQUIPO1'
+            var nombreEquipo2 = document.getElementById('equipo2').value;
+			sessionStorage.setItem('nombreEquipo', nombreEquipo); // GUARDAMOS EL VALOR EN LA SESIÓN
+            sessionStorage.setItem('nombreEquipo2', nombreEquipo2);
+			//window.location.href = 'pagina2.html'; // REDIRIGIMOS A LA PÁGINA 2
+		}
+</script>
 </html>
