@@ -1,3 +1,5 @@
+//SISTEMA DE CLICKS
+
 // generate a random Number
 let getRandomNumber = size => {
     return Math.floor(Math.random() * size);
@@ -12,20 +14,20 @@ let getRandomNumber = size => {
   
   // return an String depending on the distances 
   let getDistanceHint = distance => {
-    if (distance < 30) {
-      return "ESTAS MUY MUY CERCA!";
-    } else if (distance < 60) {
-      return "ESTAS MUY CERCA";
-    } else if (distance < 80) {
-      return "ESTAS CERCA";
-    } else if (distance < 120) {
+    if (distance < 80) {
+      return "CASI LO ENCUENTRAS!";
+    } else if (distance < 150) {
+      return "MUY MUY CERCA";
+    } else if (distance < 200) {
+      return " MUY CERCA";
+    } else if (distance < 280) {
       return "CERCA";
-    } else if (distance < 180) {
-      return "ESTAS LEJOS";
-    } else if (distance < 360) {
-      return "ESTAS MUY LEJOS";
+    } else if (distance < 400) {
+      return "LEJOS";
+    } else if (distance < 500) {
+      return "MUY LEJOS";
     } else {
-      return "ESTAS LEJISIMOS!";
+      return "LEJISIMOS!";
     }
   }
 
@@ -46,6 +48,11 @@ let clicks = 0;
 
 
 $map.addEventListener('click', function (e) {
+
+  if (clicks > 30) { // Si se han hecho más de 30 clics
+    window.location.href = "perdedor.html"; // Redireccionar a otra página
+    return; // Terminar la función
+  }
     
   console.log('click');
   clicks++;
@@ -60,9 +67,44 @@ $map.addEventListener('click', function (e) {
    $circle.style.top = e.pageY + 'px';
    document.body.appendChild($circle);
 
-  if (distance < 25 ) {
+  if (distance < 60 ) {
     alert(`Found the treasure in ${clicks} clicks!`);
     location.reload();
     window.location.href = "ganador.html";
   }
 });
+
+// PREGUNTAS FUNCIONALIDAD
+escogerPregunta()
+function escogerPregunta(n) {
+  pregunta = interprete_bp[n];
+  select_id("pregunta").innerHTML = pregunta.pregunta;
+  select_id("numero").innerHTML = n;
+  let pc = preguntas_correctas;
+  if (preguntas_hechas > 1) {
+    select_id("puntaje").innerHTML = pc + "/" + (preguntas_hechas - 1);
+  } else {
+    select_id("puntaje").innerHTML = "";
+  }
+
+  desordenarRespuestas(pregunta);
+  
+}
+function select_id(id) {
+  return document.getElementById(id);
+}
+
+function style(id) {
+  return select_id(id).style;
+}
+
+function readText(ruta_local) {
+  var texto = null;
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("GET", ruta_local, false);
+  xmlhttp.send();
+  if (xmlhttp.status == 200) {
+    texto = xmlhttp.responseText;
+  }
+  return texto;
+}

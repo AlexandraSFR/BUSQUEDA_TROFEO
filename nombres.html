@@ -8,7 +8,8 @@
     <title>Nombres</title>
 </head>
 <body>
-    <audio id="myAudio" src="audio/audio3.mp3" autoplay loop></audio>
+    <audio id="myAudio" src="audio/audio4.mp3" autoplay loop></audio>
+    <button id="playButton" class="musicButton"><i class="fas fa-music"></i></button>
     <div class="contenedor">
         <form action="juego.html">
             <input type="text" name="input1" id="equipo1" style="width: 200px; height: 60px; " class="input-box left">
@@ -21,6 +22,18 @@
     window.addEventListener("unload", function() {
         document.getElementById("myAudio").pause();
     });
+    const myAudio = document.getElementById("myAudio");
+const playButton = document.getElementById("playButton");
+
+playButton.addEventListener("click", () => {
+  if (myAudio.paused) {
+    myAudio.play();
+    playButton.innerHTML = "<i class='fas fa-pause'></i>";
+  } else {
+    myAudio.pause();
+    playButton.innerHTML = "<i class='fas fa-music'></i>";
+  }
+});
 
     function guardarNombre() {
 			var nombreEquipo = document.getElementById('equipo1').value; // OBTENEMOS EL VALOR DEL INPUT 'EQUIPO1'
@@ -30,4 +43,5 @@
 			//window.location.href = 'pagina2.html'; // REDIRIGIMOS A LA PÁGINA 2
 		}
 </script>
+<script src="https://kit.fontawesome.com/8a58fde5c5.js" crossorigin="anonymous"></script>
 </html>

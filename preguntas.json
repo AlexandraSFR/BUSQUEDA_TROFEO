@@ -1,0 +1,9 @@
+[
+    {
+        "pregunta" : "¿Quién prepara las preguntas en una entrevista?",
+        "respuesta": "Entrevistador",
+        "incorrecta1": "Entrevistado",
+        "incorrecta2": "Público",
+        "incorrecta3" : "Escritor"
+    }
+]
