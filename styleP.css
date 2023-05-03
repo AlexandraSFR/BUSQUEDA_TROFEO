@@ -61,7 +61,7 @@ body{
     height: 120px;
     /*background-color: white; */
     position: absolute;
-    top:280px;
+    top:260px;
     right: 120px;
     border-radius: 30px;
     padding-top: 10px;
@@ -95,11 +95,13 @@ body{
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
   }
-  
-  .bv:hover{
- background-color: #EB416A;
- cursor: pointer;
+
+  .bv{
+   text-align: center;
   }
+  
+  
+  
   .imgEquipo{
     display: flex;
     flex-direction: column;

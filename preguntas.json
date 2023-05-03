@@ -5,5 +5,210 @@
         "incorrecta1": "Entrevistado",
         "incorrecta2": "Público",
         "incorrecta3" : "Escritor"
+    },
+    {
+        "pregunta" : "En el texto La vereda subía, entre yerbas, llena de espinas y de malas mujeres. La forma del discurso es",
+        "respuesta": "Literaria",
+        "incorrecta1": "Narrativa",
+        "incorrecta2": "Descriptiva",
+        "incorrecta3" : "Dramática"
+    },
+    {
+        "pregunta" : "¿Cuál de los siguientes conjuntos está compuesto solo por adjetivos?",
+        "respuesta": "Filial, tutelar, potable, cálido",
+        "incorrecta1": "Difícil, momia, vieja, natural",
+        "incorrecta2": "Reprobado, aromático, cansado, sol",
+        "incorrecta3" : "Sopa, pesado, folleto, comprado"
+    },
+    {
+        "pregunta" : "Sinónimo de ACUMULACIÓN",
+        "respuesta": "Aglomeración",
+        "incorrecta1": "Exuberancia",
+        "incorrecta2": "Manifestación",
+        "incorrecta3" : "Promiscuidad"
+    },
+    {
+        "pregunta" : "Es la ciencia que estudia la lengua en todas sus manifestaciones",
+        "respuesta": "Lingüística",
+        "incorrecta1": "Metalingüística",
+        "incorrecta2": "Sintaxis",
+        "incorrecta3" : "Morfología"
+    },
+    {
+        "pregunta" : "Todas son consideradas cantidades físicas fundamentales, EXCEPTO",
+        "respuesta": "Aceleración",
+        "incorrecta1": "Tiempo",
+        "incorrecta2": "Longitud",
+        "incorrecta3" : "Temperatura"
+    },
+    {
+        "pregunta" : "Fenomeno que consiste en el cambio de posición de un sistema u objeto",
+        "respuesta": "Movimiento",
+        "incorrecta1": "Aceleración",
+        "incorrecta2": "Rapidez",
+        "incorrecta3" : "Velocidad"
+    },
+    {
+        "pregunta" : "Es la cantidad física escalar que nos dice cuanta energía se transfiere por unidad de tiempo",
+        "respuesta": "Potencia",
+        "incorrecta1": "Velocidad",
+        "incorrecta2": "Ímpetu",
+        "incorrecta3" : "Conservación"
+    },
+    {
+        "pregunta" : "¿A cuál cantidad física corresponde la unidad física Newton (N)?",
+        "respuesta": "Fuerza",
+        "incorrecta1": "Energía",
+        "incorrecta2": "Presión",
+        "incorrecta3" : "Volumen"
+    },
+    {
+        "pregunta" : "Es la cantidad física vectorial que nos dice como se mueve un sistema",
+        "respuesta": "Velocidad",
+        "incorrecta1": "Energía",
+        "incorrecta2": "Presión",
+        "incorrecta3" : "Fuerza"
+    },
+    {
+        "pregunta" : "Musculo que impulsa sangre por todo el cuerpo",
+        "respuesta": "Corazón",
+        "incorrecta1": "Cerebro",
+        "incorrecta2": "Pulmones",
+        "incorrecta3" : "Riñones"
+    },
+    {
+        "pregunta" : "¿Cuáles son las fases de la fotosíntesis?",
+        "respuesta": "Luminosa y oscura",
+        "incorrecta1": "Activa y pasiva",
+        "incorrecta2": "Primaria y secundaria",
+        "incorrecta3" : "No tiene fases"
+    },
+    {
+        "pregunta" : "Las células reproductoras se dividen por:",
+        "respuesta": "Meiosis",
+        "incorrecta1": "Mitosis",
+        "incorrecta2": "Metamorfosis",
+        "incorrecta3" : "Genética"
+    },
+    {
+        "pregunta" : "Los seres vivos se clasifican en grandes grupos llamados reinos, ¿Cuántos son?",
+        "respuesta": "cinco",
+        "incorrecta1": "dos",
+        "incorrecta2": "tres",
+        "incorrecta3" : "seis"
+    },
+    {
+        "pregunta" : "Como se puede llamar también al ADN",
+        "respuesta": "Ácido desoxirribonucleico",
+        "incorrecta1": "Ácido ribonucleico",
+        "incorrecta2": "Citosina",
+        "incorrecta3" : "Mistosina"
+    },
+    {
+        "pregunta" : "¿Cuáles son los estados fundamentales de la materia?",
+        "respuesta": "Gaseoso, líquido, sólido",
+        "incorrecta1": "Átomo, molécula, compuesto",
+        "incorrecta2": "Congelado, acuoso, vapor",
+        "incorrecta3" : "Homogéneo y heterogéneo"
+    }, 
+    {
+        "pregunta" : "La unión de dos elementos forman:",
+        "respuesta": "Un compuesto",
+        "incorrecta1": "Una solución",
+        "incorrecta2": "Una mezcla",
+        "incorrecta3" : "Una pareja"
+    },
+    {
+        "pregunta" : "¿Cuántos elementos se han descubierto en la Tierra?",
+        "respuesta": "118",
+        "incorrecta1": "119",
+        "incorrecta2": "117",
+        "incorrecta3" : "116"
+    },
+    {
+        "pregunta" : "La fórmula H2O es la fórmula del:",
+        "respuesta": "Agua",
+        "incorrecta1": "Alcohol",
+        "incorrecta2": "Azúcar",
+        "incorrecta3" : "Aire"
+    },
+    {
+        "pregunta" : "La unión entre átomos donde hay transferencia de electrones es:",
+        "respuesta": "Enlace iónico",
+        "incorrecta1": "Enlace covalente",
+        "incorrecta2": "Enlace metálico",
+        "incorrecta3" : "Enlace numérico"
+    },
+    {
+        "pregunta" : "¿Cómo se llamaban los gobernantes del antiguo Egipto?",
+        "respuesta": "Faraones",
+        "incorrecta1": "Reyes",
+        "incorrecta2": "Basilios",
+        "incorrecta3" : "Alcaldes"
+    },{
+        "pregunta" : "¿Dónde y cuándo se inventó la pólvora?",
+        "respuesta": "En China en el siglo IX",
+        "incorrecta1": "En Estados Unidos en el siglo XIX",
+        "incorrecta2": "En Francia en el siglo XVII",
+        "incorrecta3" : "En Japón en el siglo XII"
+    },
+    {
+        "pregunta" : "¿Cuál evento provocó el inicio de la Segunda Guerra Mundial?",
+        "respuesta": "La invasión alemana a Polonia",
+        "incorrecta1": "El ataque a Fort Sumter",
+        "incorrecta2": "La batalla de Verdún",
+        "incorrecta3" : "La guerra de los pasteles"
+    },
+    {
+        "pregunta" : "Primera persona que viajó al espacio y logró orbitar el planeta tierra",
+        "respuesta": "Neil Armstrong",
+        "incorrecta1": "Yuri Gagarin",
+        "incorrecta2": "Valentina Tereshkova",
+        "incorrecta3" : "Luke Hemmings"
+    },
+    {
+        "pregunta" : "¿Cuál idioma hablaban los aztecas?",
+        "respuesta": "Náhuatl",
+        "incorrecta1": "Quechua",
+        "incorrecta2": "Aymara",
+        "incorrecta3" : "Olmeca"
+    },
+    {
+        "pregunta" : "¿Cuántos decimales tiene el número pi π?",
+        "respuesta": "Infinitos",
+        "incorrecta1": "Dos",
+        "incorrecta2": "Veinte",
+        "incorrecta3" : "Cien"
+    },
+    {
+        "pregunta" : "¿Cómo se llama también el perímetro de un círculo?",
+        "respuesta": "Circunferencia",
+        "incorrecta1": "Diámetro",
+        "incorrecta2": "Tangente",
+        "incorrecta3" : "Radio"
+    },
+    {
+        "pregunta" : "¿Quién descubrió las leyes de la palanca y la polea?",
+        "respuesta": "Arquímedes",
+        "incorrecta1": "Sócrates",
+        "incorrecta2": "Aristóteles",
+        "incorrecta3" : "Newton"
+    },
+    {
+        "pregunta" : "¿Cuántos grados hay en un ángulo recto?",
+        "respuesta": "90 grados",
+        "incorrecta1": "25 grados",
+        "incorrecta2": "180 grados",
+        "incorrecta3" : "270 grados"
+    },
+    {
+        "pregunta" : "Número de horas en una semana",
+        "respuesta": "168",
+        "incorrecta1": "3,600",
+        "incorrecta2": "60",
+        "incorrecta3" : "24"
     }
+
+
+
 ]

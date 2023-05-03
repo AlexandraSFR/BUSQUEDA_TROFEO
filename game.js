@@ -75,21 +75,71 @@ $map.addEventListener('click', function (e) {
 });
 
 // PREGUNTAS FUNCIONALIDAD
-escogerPregunta()
-function escogerPregunta(n) {
-  pregunta = interprete_bp[n];
-  select_id("pregunta").innerHTML = pregunta.pregunta;
-  select_id("numero").innerHTML = n;
-  let pc = preguntas_correctas;
-  if (preguntas_hechas > 1) {
-    select_id("puntaje").innerHTML = pc + "/" + (preguntas_hechas - 1);
-  } else {
-    select_id("puntaje").innerHTML = "";
-  }
-
-  desordenarRespuestas(pregunta);
-  
+let base_preguntas = readText("preguntas.json")
+  let interprete_bp = JSON.parse(base_preguntas)
+  let pregunta
+  let posibles_respuestas
+  let btn_correspondiente =[
+    select_id("btn1"),
+    select_id("btn2"),
+    select_id("btn3"),
+    select_id("btn4")
+  ]
+//
+escogerPreguntaAleatoria()
+function escogerPreguntaAleatoria (){
+  escogerPregunta(Math.floor(Math.random()*interprete_bp.length))
 }
+
+function escogerPregunta(n) {
+  pregunta = interprete_bp[n]
+  select_id("pregunta").innerHTML=pregunta.pregunta
+  select_id("btn1").innerHTML= pregunta.respuesta
+  select_id("btn2").innerHTML= pregunta.incorrecta1
+  select_id("btn3").innerHTML= pregunta.incorrecta2
+  select_id("btn4").innerHTML= pregunta.incorrecta3
+  desordenarRespuestas(pregunta)
+}
+
+let btns = [
+  select_id("btn1"),
+  select_id("btn2"),
+  select_id("btn3"),
+  select_id("btn4")
+]
+
+function desordenarRespuestas(pregunta){
+posibles_respuestas = [
+  pregunta.respuesta,
+  pregunta.incorrecta1,
+pregunta.incorrecta2, 
+pregunta.incorrecta3]
+posibles_respuestas.sort(()=>Math.random()-0.5)
+select_id("btn1").innerHTML= posibles_respuestas[0]
+select_id("btn2").innerHTML= posibles_respuestas[1]
+select_id("btn3").innerHTML= posibles_respuestas[2]
+select_id("btn4").innerHTML= posibles_respuestas[3]
+}
+
+function oprimir_btn (i){
+ if( posibles_respuestas[i]==pregunta.respuesta){
+  btn_correspondiente[i].style.background = "lightgreen"
+ }else{
+  btn_correspondiente[i].style.background = "pink"
+ }
+ setTimeout(()=>{
+
+reiniciar()
+ },2000);
+}
+
+function reiniciar(){
+  for (const btn of btn_correspondiente){
+    btn.style.background = "white"
+  }
+  escogerPreguntaAleatoria()
+}
+
 function select_id(id) {
   return document.getElementById(id);
 }
