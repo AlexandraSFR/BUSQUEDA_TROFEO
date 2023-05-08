@@ -109,9 +109,9 @@ body{
     margin-top: 10px;
     position: absolute;
     top: 120px;
-    right: 360px;
-    width: 110px;
-    height: 160px;
+    right: 380px;
+    width: 90px;
+    height: 140px;
   }
 
   
@@ -140,7 +140,6 @@ body{
     background-image: url('img/taha.png');
     background-size: 100% 100%;
     position: absolute;
-    z-index: 9999;
     pointer-events: none; /* make sure the circle doesn't interfere with clicks */
   }
 
@@ -162,3 +161,52 @@ body{
 
 
   /*PREGUNTAS*/
+
+  #modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+  }
+  #modal2 {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+  }
+  .modalimg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .modal-content {
+    margin: 10% auto;
+    padding: 20px;
+    width: 900px;
+    height: 300px;
+    text-align: center;
+    animation: fadein 0.5s;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+  @keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  }

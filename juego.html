@@ -10,12 +10,12 @@
 </head>
 
 <body>
-    <audio id="myAudio" src="audio/audio5.mp3" autoplay loop></audio>
+    <audio id="myAudio" src="audio/audio3.mp3" autoplay loop></audio>
     <button id="playButton" class="musicButton"><i class="fas fa-music"></i></button>
     <div id="container">
         <div id="inner-container">
             
-            <img src="img/punteada.png" alt="Imagen" id="map" style="position: relative;">
+            <img src="img/lab.png" alt="Imagen" id="map" style="position: relative;">
             <!-- <img src="img/lab.png" alt="Imagen">
             <button class="btn2" id="btnStart" onclick="iniciarJuego()"></button>
             -->
@@ -26,8 +26,24 @@
     
     <a href="despedida.html"><button class="btn"></button></a>
     <!--<button class="btn2"></button>-->
+    <div id="modal">
+        <div class="modal-content">
+            <img src="img/sigb.png" class="modalimg">
+        </div>
+      </div>
+      <div id="modal2">
+        <div class="modal-content">
+            <img src="img/sig.png" class="modalimg">
+        </div>
+      </div>
     <form action="">
-        <!--<img class="imgEquipo" src="img/LA1.png" >-->
+        <img class="imgEquipo" src="img/LA1.png" id="imgEquipo" alt="Equipo">
+        <audio id="respuesta">
+            <source src="audio/bien.mp3" >
+          </audio>
+          <audio id="respuesta2">
+            <source src="audio/mal.mp3" >
+          </audio>
         <div class="pregunta">
             <h1 id="pregunta"></h1>
         </div>

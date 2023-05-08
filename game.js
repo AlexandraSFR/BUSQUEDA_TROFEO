@@ -1,5 +1,4 @@
 //SISTEMA DE CLICKS
-
 // generate a random Number
 let getRandomNumber = size => {
     return Math.floor(Math.random() * size);
@@ -44,17 +43,28 @@ let target = {
 let $map = document.querySelector('#map');
 let $distance = document.querySelector('#distance');
 let clicks = 0;
+const imgEquipo = document.getElementById('imgEquipo');
+//VARIABLE PARA LLEVAR EL CONTROL DE QUE EQUIPO VA GANANDO O PERDIENDO
+const equipos = ["img/LA1", "img/LF1"];
+let turno_actual = 0;
+let global = 0;
+const modal = document.getElementById("modal");
+const modal2 = document.getElementById("modal2");
 
-
-
+function actualizarImagenEquipo() {
+  const imagen = document.getElementById("imgEquipo");
+  const nombreEquipo = equipos[turno_actual];
+  imagen.src = `${nombreEquipo}.png`;
+}
+//FUNCIONES DE CLICKS
 $map.addEventListener('click', function (e) {
 
   if (clicks > 30) { // Si se han hecho más de 30 clics
     window.location.href = "perdedor.html"; // Redireccionar a otra página
     return; // Terminar la función
   }
-    
-  console.log('click');
+
+  escogerPreguntaAleatoria()
   clicks++;
   let distance = getDistance(e, target);
   let distanceHint = getDistanceHint(distance);
@@ -86,7 +96,7 @@ let base_preguntas = readText("preguntas.json")
     select_id("btn4")
   ]
 //
-escogerPreguntaAleatoria()
+
 function escogerPreguntaAleatoria (){
   escogerPregunta(Math.floor(Math.random()*interprete_bp.length))
 }
@@ -123,9 +133,46 @@ select_id("btn4").innerHTML= posibles_respuestas[3]
 
 function oprimir_btn (i){
  if( posibles_respuestas[i]==pregunta.respuesta){
+  modal.style.display = "block";
+  setTimeout(function() {
+    modal.style.animation = "fadeout 0.5s";
+    setTimeout(function() {
+      modal.style.display = "none";
+      modal.style.animation = "";
+    }, 500);
+  }, 2000);
+  document.getElementById("respuesta").play();
   btn_correspondiente[i].style.background = "lightgreen"
+  if (turno_actual == 0){ //este es el primer caso, se mantiene como 0 o sea el equipo 1 
+    turno_actual = 0;
+    actualizarImagenEquipo();
+  }else{
+    turno_actual = 1; // si el turno esta en 1 entonces se pondra el otro
+    actualizarImagenEquipo();
+  }
+  
  }else{
+  modal2.style.display = "block";
+  setTimeout(function() {
+    modal2.style.animation = "fadeout 0.5s";
+    setTimeout(function() {
+      modal2.style.display = "none";
+      modal2.style.animation = "";
+    }, 500);
+  }, 2000);
+  document.getElementById("respuesta2").play();
   btn_correspondiente[i].style.background = "pink"
+  if (turno_actual == 0){
+    turno_actual = 1;
+    imgEquipo.src = 'img/LF1.png';
+  }else{
+    turno_actual = 0;
+    imgEquipo.src = 'img/LA1.png';
+  }
+
+  
+
+
  }
  setTimeout(()=>{
 
@@ -158,3 +205,5 @@ function readText(ruta_local) {
   }
   return texto;
 }
+
+
