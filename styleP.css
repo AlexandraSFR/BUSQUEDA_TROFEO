@@ -1,5 +1,5 @@
 body{
-    background-image: url("img/fondo3.png");
+    background-image: url("img/fondo34.png");
     background-color: #00AD9C;
     background-size: cover;
     background-size: 100% 100%;
@@ -157,6 +157,26 @@ body{
     background-image: url('img/hg.png');
     background-size: 100% 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .Nequipo{
+    background-color:#00AD9C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    position: absolute;
+    top: 150px;
+    right: 180px;
+    width: 150px;
+    height: 80px;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    color: #fff
   }
 
 

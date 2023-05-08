@@ -2,7 +2,7 @@ body{
     background-image: url("img/ganar.png");
     background-color: #00AD9C;
     background-size: cover;
-  background-size: 80rem;
+  background-size: 70rem;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -16,6 +16,37 @@ body{
   position: relative;
 left: 800px;
 top: 90px;
+  background-repeat: no-repeat;
+  animation: jump 1s ease-in-out infinite;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  25% {
+    transform: translateY(-20px) rotate(0);
+  }
+  50% {
+    transform: translateY(0) rotate(0);
+  }
+  75% {
+    transform: translateY(-10px) rotate(0);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+
+.monkey2 {
+  
+  width: 400px;
+  height: 540px;
+  background-size: contain;
+  position: relative;
+left: 100px;
+top: -470px;
   background-repeat: no-repeat;
   animation: jump 1s ease-in-out infinite;
 }

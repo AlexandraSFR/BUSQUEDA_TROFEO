@@ -8,7 +8,10 @@
     <title>Ganador</title>
 </head>
 <body>
+    <audio id="myAudio" src="audio/audio6.mp3" autoplay loop></audio>
     <div class="monkey"></div>
+        <img src="" class="monkey2" id="ganador">
+    
     <script src="confetti.js"></script>
     <script>
         const start = () =>{
@@ -17,6 +20,13 @@
             });
         };
         start();
+
+        window.addEventListener("unload", function() {
+            document.getElementById("myAudio").pause();
+        });
+
+        const myAudio = document.getElementById("myAudio");
     </script>
+    <script src="ganador.js" charset="UTF-8"></script>
 </body>
 </html>

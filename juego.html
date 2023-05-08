@@ -37,6 +37,7 @@
         </div>
       </div>
     <form action="">
+      <div class="Nequipo" id="nequito"></div>
         <img class="imgEquipo" src="img/LA1.png" id="imgEquipo" alt="Equipo">
         <audio id="respuesta">
             <source src="audio/bien.mp3" >
@@ -78,6 +79,7 @@ playButton.addEventListener("click", () => {
         //NOMBRES DE LOS EQUIPOS 
         var nombreEquipo = sessionStorage.getItem('nombreEquipo');
         var nombreEquipo2 = sessionStorage.getItem('nombreEquipo2');
+        document.getElementById('nequito').textContent = nombreEquipo;
         /*
         document.getElementById('nombreEquipo').textContent = nombreEquipo;
         document.getElementById('nombreEquipo2').textContent = nombreEquipo2;*/

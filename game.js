@@ -50,6 +50,9 @@ let turno_actual = 0;
 let global = 0;
 const modal = document.getElementById("modal");
 const modal2 = document.getElementById("modal2");
+var nombreEquipo = sessionStorage.getItem('nombreEquipo');
+var nombreEquipo2 = sessionStorage.getItem('nombreEquipo2');
+
 
 function actualizarImagenEquipo() {
   const imagen = document.getElementById("imgEquipo");
@@ -78,9 +81,11 @@ $map.addEventListener('click', function (e) {
    document.body.appendChild($circle);
 
   if (distance < 60 ) {
+    localStorage.setItem('equipoGanador', turno_actual);
     alert(`Found the treasure in ${clicks} clicks!`);
     location.reload();
     window.location.href = "ganador.html";
+    
   }
 });
 
@@ -145,9 +150,11 @@ function oprimir_btn (i){
   btn_correspondiente[i].style.background = "lightgreen"
   if (turno_actual == 0){ //este es el primer caso, se mantiene como 0 o sea el equipo 1 
     turno_actual = 0;
+    document.getElementById('nequito').textContent = nombreEquipo;
     actualizarImagenEquipo();
   }else{
     turno_actual = 1; // si el turno esta en 1 entonces se pondra el otro
+    document.getElementById('nequito').textContent = nombreEquipo2;
     actualizarImagenEquipo();
   }
   
@@ -165,9 +172,11 @@ function oprimir_btn (i){
   if (turno_actual == 0){
     turno_actual = 1;
     imgEquipo.src = 'img/LF1.png';
+    document.getElementById('nequito').textContent = nombreEquipo2;
   }else{
     turno_actual = 0;
     imgEquipo.src = 'img/LA1.png';
+    document.getElementById('nequito').textContent = nombreEquipo;
   }
 
   
