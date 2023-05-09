@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleL.css">
+    <title>Perdedores</title>
+</head>
+<body>
+    <audio id="myAudio" src="audio/audio8.mp3" autoplay loop></audio>
+    <section class="container">
+        <div class="vapour">
+            <div class="monkey"></div>
+        </div>
+    </section>
+    
+
+    <script >
+
+
+const container = document.querySelector('.container')
+
+const rain = () => {
+    let j = 0
+
+    while (j <= 80){
+        let gout = document.createElement('i')
+        let x = innerWidth * Math.random()
+        let time = 1 * Math.random()
+
+
+        gout.style.animationDuration = time <= 0.4 ? (time + 0.4) + 's'  : time + 's'
+        gout.style.animationDelay = time + 's'
+        gout.style.left = x + 'px'
+
+        container.appendChild(gout)
+
+        j++
+    }
+}
+
+rain()
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body{
+    background-image: url("img/ftriste.png");
+    background-color: #00AD9C;
+    background-size: cover;
+  background-size: 80rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+
+.monkey {
+    background-image: url("img/Btriste.png");
+    width: 550px;
+    height: 550px;
+    background-size: contain;
+    position: relative;
+  left: 700px;
+  top: 80px;
+    background-repeat: no-repeat;
+    animation: jump 1s ease-in-out infinite;
+  }
+
+  @keyframes jump {
+    0% {
+      transform: translateY(0) rotate(0);
+    }
+    25% {
+      transform: translateY(-20px) rotate(0);
+    }
+    50% {
+      transform: translateY(0) rotate(0);
+    }
+    75% {
+      transform: translateY(-10px) rotate(0);
+    }
+    100% {
+      transform: translateY(0) rotate(0);
+    }
+  }
+
+
+
+  .container .vapour {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: vapour 10s linear infinite;
+}
+
+@keyframes vapour {
+    0%, 100% {
+        backdrop-filter: blur(0);
+    }
+    50% {
+        backdrop-filter: blur(2px);
+    }
+}
+
+.container h2 {
+  position: absolute;
+  color: #fff;
+  font-size: 125px;
+}
+
+.container i {
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  top: -10px;
+  background: #d3d3d3;
+  animation: rain linear infinite;
+}
+
+@keyframes rain {
+  0% {
+      top: -10px;
+  }
+  100% {
+      top: 100vh;
+  }
+}
