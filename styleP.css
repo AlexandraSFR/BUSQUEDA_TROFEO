@@ -84,6 +84,7 @@ body{
   }
   
   .botones div {
+    padding-top: 5px;
     margin-right: 10px;
     margin-bottom: 10px;
     font-size: 18px;
@@ -94,6 +95,10 @@ body{
     border-radius: 30px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   }
 
   .bv{

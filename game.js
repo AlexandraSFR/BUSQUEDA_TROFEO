@@ -52,6 +52,7 @@ const modal = document.getElementById("modal");
 const modal2 = document.getElementById("modal2");
 var nombreEquipo = sessionStorage.getItem('nombreEquipo');
 var nombreEquipo2 = sessionStorage.getItem('nombreEquipo2');
+let preguntaSeleccionada = true;
 
 
 function actualizarImagenEquipo() {
@@ -61,6 +62,10 @@ function actualizarImagenEquipo() {
 }
 //FUNCIONES DE CLICKS
 $map.addEventListener('click', function (e) {
+  if (!preguntaSeleccionada) {
+    alert("¡Debes seleccionar una pregunta antes de continuar!");
+    return;
+  }
 
   if (clicks > 30) { // Si se han hecho más de 30 clics
     window.location.href = "perdedor.html"; // Redireccionar a otra página
@@ -82,11 +87,12 @@ $map.addEventListener('click', function (e) {
 
   if (distance < 60 ) {
     localStorage.setItem('equipoGanador', turno_actual);
-    alert(`Found the treasure in ${clicks} clicks!`);
+    //alert(`Found the treasure in ${clicks} clicks!`);
     location.reload();
     window.location.href = "ganador.html";
     
   }
+  preguntaSeleccionada = false;
 });
 
 // PREGUNTAS FUNCIONALIDAD
@@ -104,6 +110,7 @@ let base_preguntas = readText("preguntas.json")
 
 function escogerPreguntaAleatoria (){
   escogerPregunta(Math.floor(Math.random()*interprete_bp.length))
+  preguntaSeleccionada = true;
 }
 
 function escogerPregunta(n) {
@@ -137,6 +144,7 @@ select_id("btn4").innerHTML= posibles_respuestas[3]
 }
 
 function oprimir_btn (i){
+ 
  if( posibles_respuestas[i]==pregunta.respuesta){
   modal.style.display = "block";
   setTimeout(function() {

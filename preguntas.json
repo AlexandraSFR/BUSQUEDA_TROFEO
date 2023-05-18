@@ -15,10 +15,10 @@
     },
     {
         "pregunta" : "¿Cuál de los siguientes conjuntos está compuesto solo por adjetivos?",
-        "respuesta": "Filial, tutelar, potable, cálido",
-        "incorrecta1": "Difícil, momia, vieja, natural",
-        "incorrecta2": "Reprobado, aromático, cansado, sol",
-        "incorrecta3" : "Sopa, pesado, folleto, comprado"
+        "respuesta": "Filial, tutelar, potable",
+        "incorrecta1": "Difícil, momia, vieja",
+        "incorrecta2": "Reprobado, aromático, cansado",
+        "incorrecta3" : "Sopa, pesado, folleto"
     },
     {
         "pregunta" : "Sinónimo de ACUMULACIÓN",
@@ -106,17 +106,17 @@
     },
     {
         "pregunta" : "¿Cuáles son los estados fundamentales de la materia?",
-        "respuesta": "Gaseoso, líquido, sólido",
-        "incorrecta1": "Átomo, molécula, compuesto",
-        "incorrecta2": "Congelado, acuoso, vapor",
+        "respuesta": "Gaseoso,líquido,sólido",
+        "incorrecta1": "Átomo,molécula,compuesto",
+        "incorrecta2": "Congelado,acuoso,vapor",
         "incorrecta3" : "Homogéneo y heterogéneo"
     }, 
     {
         "pregunta" : "La unión de dos elementos forman:",
-        "respuesta": "Un compuesto",
-        "incorrecta1": "Una solución",
-        "incorrecta2": "Una mezcla",
-        "incorrecta3" : "Una pareja"
+        "respuesta": "compuesto",
+        "incorrecta1": "solución",
+        "incorrecta2": "mezcla",
+        "incorrecta3" : "pareja"
     },
     {
         "pregunta" : "¿Cuántos elementos se han descubierto en la Tierra?",
@@ -147,17 +147,17 @@
         "incorrecta3" : "Alcaldes"
     },{
         "pregunta" : "¿Dónde y cuándo se inventó la pólvora?",
-        "respuesta": "En China en el siglo IX",
-        "incorrecta1": "En Estados Unidos en el siglo XIX",
-        "incorrecta2": "En Francia en el siglo XVII",
-        "incorrecta3" : "En Japón en el siglo XII"
+        "respuesta": "China siglo IX",
+        "incorrecta1": "Estados Unidos siglo XIX",
+        "incorrecta2": "Francia  siglo XVII",
+        "incorrecta3" : "Japón siglo XII"
     },
     {
         "pregunta" : "¿Cuál evento provocó el inicio de la Segunda Guerra Mundial?",
-        "respuesta": "La invasión alemana a Polonia",
-        "incorrecta1": "El ataque a Fort Sumter",
-        "incorrecta2": "La batalla de Verdún",
-        "incorrecta3" : "La guerra de los pasteles"
+        "respuesta": "invasión alemana a Polonia",
+        "incorrecta1": "ataque a Fort Sumter",
+        "incorrecta2": "batalla de Verdún",
+        "incorrecta3" : "guerra de los pasteles"
     },
     {
         "pregunta" : "Primera persona que viajó al espacio y logró orbitar el planeta tierra",
