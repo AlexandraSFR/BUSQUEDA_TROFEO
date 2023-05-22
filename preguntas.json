@@ -49,7 +49,7 @@
         "incorrecta3" : "Velocidad"
     },
     {
-        "pregunta" : "Es la cantidad física escalar que nos dice cuanta energía se transfiere por unidad de tiempo",
+        "pregunta" : "Cantidad física escalar que nos dice cuanta energía se transfiere por unidad de tiempo",
         "respuesta": "Potencia",
         "incorrecta1": "Velocidad",
         "incorrecta2": "Ímpetu",
@@ -207,7 +207,211 @@
         "incorrecta1": "3,600",
         "incorrecta2": "60",
         "incorrecta3" : "24"
+    },
+    {
+        "pregunta" : "¿Figura literaria se utiliza en la siguiente oración? 'La noche era oscura como boca de lobo.'",
+        "respuesta": "Metáfora",
+        "incorrecta1": "Comparación",
+        "incorrecta2": "Hipérbole",
+        "incorrecta3" : "Personificación"
+    },
+    {
+        "pregunta" : "¿Complemento circunstancial de tiempo de la siguiente oración? 'Voy a la playa todos los veranos.'",
+        "respuesta": "Todos los veranos",
+        "incorrecta1": "Voy",
+        "incorrecta2": "Playa",
+        "incorrecta3" : "Todos los veranos"
+    },
+    {
+        "pregunta" : "Identifica el tipo de oración de la siguiente estructura: '¡Qué bonito es el paisaje!'",
+        "respuesta": "Oración exclamativa",
+        "incorrecta1": "Oración interrogativa",
+        "incorrecta2": "Oración afirmativa",
+        "incorrecta3" : "Oración negativa"
+    },
+    {
+        "pregunta" : "¿Cuál es el sujeto omitido en la siguiente oración? '¡Que te vaya bien!'",
+        "respuesta": "Tú",
+        "incorrecta1": "Él/Ella",
+        "incorrecta2": "Nosotros",
+        "incorrecta3" : "Vosotros"
+    },
+    {
+        "pregunta" : "¿Figura literaria presente en la siguiente expresión? 'Tiene una risa como cristal de alegría.'",
+        "respuesta": "Personificación",
+        "incorrecta1": "Comparación",
+        "incorrecta2": "Hipérbole",
+        "incorrecta3" : "Metáfora"
+    },
+    {
+        "pregunta" : "¿Cuál es la unidad de medida del trabajo en el Sistema Internacional de Unidades (SI)?",
+        "respuesta": "Joule",
+        "incorrecta1": "Watt",
+        "incorrecta2": "Newton",
+        "incorrecta3" : "Metro"
+    },
+    {
+        "pregunta" : "¿Cuál es la fórmula para calcular la velocidad de un objeto?",
+        "respuesta": "distancia / tiempo",
+        "incorrecta1": "tiempo / distancia",
+        "incorrecta2": "fuerza x distancia",
+        "incorrecta3" : "aceleración / tiempo"
+    },
+    {
+        "pregunta" : "¿Cuál es la fórmula para calcular la fuerza neta que actúa sobre un objeto?",
+        "respuesta": "masa / aceleración",
+        "incorrecta1": "masa x aceleración",
+        "incorrecta2": "velocidad x tiempo",
+        "incorrecta3" : "trabajo / distancia"
+    },
+    {
+        "pregunta" : "Establece que la fuerza aplicada a un objeto es igual a su masa multiplicada por su aceleración",
+        "respuesta": "Ley de Newton",
+        "incorrecta1": "Ley de la Gravitación Universal",
+        "incorrecta2": "Ley de Coulomb",
+        "incorrecta3" : "Ley de Mendel"
+    },
+    {
+        "pregunta" : "Establece que la energía no se crea ni se destruye, solo se transforma",
+        "respuesta": "Ley de la conservación de la energía",
+        "incorrecta1": "Ley de la conservación del momento",
+        "incorrecta2": "Ley de Coulomb",
+        "incorrecta3" : "Ley de gravitación"
+    },
+    {
+        "pregunta" : "¿Cuál es el órgano responsable de la producción de la insulina en el cuerpo humano?",
+        "respuesta": "Páncreas",
+        "incorrecta1": "Hígado",
+        "incorrecta2": "Riñones",
+        "incorrecta3" : "Estómago"
+    },
+    {
+        "pregunta" : "¿Cuál es la función principal de los cloroplastos en las células vegetales?",
+        "respuesta": "Fotosíntesis",
+        "incorrecta1": "Producción de energía",
+        "incorrecta2": "Almacenamiento de nutrientes",
+        "incorrecta3" : "Síntesis de proteínas"
+    },
+    {
+        "pregunta" : "Estructura celular encargada de almacenar material genético en las células eucariotas",
+        "respuesta": "Núcleo",
+        "incorrecta1": "Ribosoma",
+        "incorrecta2": "Lisosoma",
+        "incorrecta3" : "Cloroplasto"
+    },
+    {
+        "pregunta" : "¿Cuál es la función principal de los leucocitos en el sistema inmunológico?",
+        "respuesta": "Combatir infecciones",
+        "incorrecta1": "Transportar oxígeno",
+        "incorrecta2": "Realizar la fotosíntesis",
+        "incorrecta3" : "Regular metabolismo celular"
+    },
+    {
+        "pregunta" : "¿Cuál de las siguientes opciones es una molécula que almacena la información genética en los seres vivos?",
+        "respuesta": "Ácido desoxirribonucleico",
+        "incorrecta1": "Ácido ribonucleico ",
+        "incorrecta2": "Lípido",
+        "incorrecta3" : "Proteína"
+    },
+    {
+        "pregunta" : "¿Cuál es la ley que establece que la masa se conserva en una reacción química?",
+        "respuesta": "Ley de la conservación de la masa",
+        "incorrecta1": "Ley de Avogadro",
+        "incorrecta2": "Ley de Dalton",
+        "incorrecta3" : "Ley de la conservación de la energía"
+    },
+    {
+        "pregunta" : "¿Cuál es el gas noble más abundante en la atmósfera terrestre?",
+        "respuesta": "Argón",
+        "incorrecta1": "Helio",
+        "incorrecta2": "Xenón",
+        "incorrecta3" : "Neón"
+    },
+    {
+        "pregunta" : "¿Cuál es el símbolo químico del elemento hierro?",
+        "respuesta": "Fe",
+        "incorrecta1": "He",
+        "incorrecta2": "Ir",
+        "incorrecta3" : "Hg"
+    },
+    {
+        "pregunta" : "¿Cuál es el pH de una sustancia considerada neutra?",
+        "respuesta": "pH 7",
+        "incorrecta1": "pH 0",
+        "incorrecta2": "pH 10",
+        "incorrecta3" : "pH 14"
+    },
+    {
+        "pregunta" : "¿Cuál es la fórmula química del dióxido de carbono?",
+        "respuesta": "CO2",
+        "incorrecta1": "H2O",
+        "incorrecta2": "CH4",
+        "incorrecta3" : "CO"
+    },
+    {
+        "pregunta" : "¿Cuál fue la fecha en la que se promulgó la Constitución Política de los Estados Unidos Mexicanos?",
+        "respuesta": "5 de febrero de 1857",
+        "incorrecta1": "15 de septiembre de 1810",
+        "incorrecta2": "16 de septiembre de 1810",
+        "incorrecta3" : "20 de noviembre de 1910"
+    },
+    {
+        "pregunta" : "¿Qué imperio fue el más grande de la Edad Media?",
+        "respuesta": "Imperio Mongol",
+        "incorrecta1": "Imperio Romano de Oriente",
+        "incorrecta2": "Imperio Azteca",
+        "incorrecta3" : "Imperio Inca"
+    },
+    {
+        "pregunta" : "¿Quién fue el líder militar que encabezó la Revolución Mexicana en el periodo de 1910 a 1920?",
+        "respuesta": "Francisco Villa",
+        "incorrecta1": "Porfirio Díaz",
+        "incorrecta2": "Benito Juárez",
+        "incorrecta3" : "Emiliano Zapata"
+    },
+    {
+        "pregunta" : "¿Cuál fue el evento histórico que marcó el inicio de la Independencia de México?",
+        "respuesta": "El Grito de Dolores",
+        "incorrecta1": "La Noche Triste",
+        "incorrecta2": "La Batalla de Puebla",
+        "incorrecta3" : "El Plan de Ayutla"
+    },
+    {
+        "pregunta" : "¿Cuál es el resultado de la siguiente operación: 3(x+2) = 27?",
+        "respuesta": "x=9",
+        "incorrecta1": "x=7",
+        "incorrecta2": "x=11",
+        "incorrecta3" : "x=13"
+    },
+    {
+        "pregunta" : "¿Cuál es el resultado de la siguiente operación: 3 + 5 x 2?",
+        "respuesta": "13",
+        "incorrecta1": "11",
+        "incorrecta2": "8",
+        "incorrecta3" : "15"
+    },
+    {
+        "pregunta" : "¿Qué es un número primo?",
+        "respuesta": "número divisible por 1 y por sí mismo",
+        "incorrecta1": "número divisible por cualquier otro número",
+        "incorrecta2": "número que contiene únicamente dígitos primos",
+        "incorrecta3" : "número que tiene un solo dígito"
+    },
+    {
+        "pregunta" : "¿Qué es un ángulo llano?",
+        "respuesta": "ángulo igual a 180 grados",
+        "incorrecta1": "ángulo mayor a 90 grados",
+        "incorrecta2": "ángulo menor a 180 grados",
+        "incorrecta3" : "ángulo igual a 90 grados"
+    },
+    {
+        "pregunta" : "¿Cuál es la fórmula para calcular el volumen de un cilindro?",
+        "respuesta": "V = πr²h",
+        "incorrecta1": "V = (1/3) Bh",
+        "incorrecta2": "V = Bh",
+        "incorrecta3" : "V = 4/3πr³"
     }
+
 
 
 
